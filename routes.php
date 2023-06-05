@@ -51,8 +51,8 @@ if (isset($_GET['page'])){
             case 'karyawancreate':
                 file_exists('pages/admin/karyawancreate.php') ? include 'pages/admin/karyawancreate.php' : include "pages/404.php";
             break;
-            case 'bagianupdate':
-                file_exists('pages/admin/bagianupdate.php') ? include 'pages/admin/bagianupdate.php' : include "pages/404.php";
+            case 'karyawanupdate':
+                file_exists('pages/admin/karyawanupdate.php') ? include 'pages/admin/karyawanupdate.php' : include "pages/404.php";
             break;
             case 'bagiandelete':
                 file_exists('pages/admin/bagiandelete.php') ? include 'pages/admin/bagiandelete.php' : include "pages/404.php";
