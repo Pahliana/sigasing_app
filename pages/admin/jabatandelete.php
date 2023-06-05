@@ -5,7 +5,7 @@ if(isset($_GET['id'])) {
     $database = new Database(); 
     $db = $database->getConnection(); 
  
-    $deleteSQL = "DELETE FROM lokasi WHERE id = ?"; 
+    $deleteSQL = "DELETE FROM jabatan WHERE id = ?"; 
     $stmt = $db->prepare($deleteSQL); 
     $stmt->bindParam(1, $_GET['id']); 
     if ($stmt->execute()) { 
@@ -14,5 +14,5 @@ if(isset($_GET['id'])) {
         $_SESSION['hasil'] = false; 
     } 
 } 
-    echo "<meta http-equiv='refresh' content='0;url=?page=lokasiread'>"; 
+    echo "<meta http-equiv='refresh' content='0;url=?page=jabatanread'>"; 
 ?>
