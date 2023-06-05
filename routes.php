@@ -48,8 +48,8 @@ if (isset($_GET['page'])){
             case 'karyawanread':
                 file_exists('pages/admin/karyawanread.php') ? include 'pages/admin/karyawanread.php' : include "pages/404.php";
             break;
-            case 'karyawanbagian':
-                file_exists('pages/admin/karyawanbagian.php') ? include 'pages/admin/karyawanbagian.php' : include "pages/404.php";
+            case 'karyawancreate':
+                file_exists('pages/admin/karyawancreate.php') ? include 'pages/admin/karyawancreate.php' : include "pages/404.php";
             break;
             case 'bagianupdate':
                 file_exists('pages/admin/bagianupdate.php') ? include 'pages/admin/bagianupdate.php' : include "pages/404.php";
